@@ -1,0 +1,11 @@
+c:\users\sony vaio\source\repos\sinemaTekSecim\sinemaTekSecim\bin\Debug\sinemaTekSecim.exe.config
+c:\users\sony vaio\source\repos\sinemaTekSecim\sinemaTekSecim\bin\Debug\sinemaTekSecim.exe
+c:\users\sony vaio\source\repos\sinemaTekSecim\sinemaTekSecim\bin\Debug\sinemaTekSecim.pdb
+c:\users\sony vaio\source\repos\sinemaTekSecim\sinemaTekSecim\obj\Debug\sinemaTekSecim.csprojResolveAssemblyReference.cache
+c:\users\sony vaio\source\repos\sinemaTekSecim\sinemaTekSecim\obj\Debug\sinemaTekSecim.Form1.resources
+c:\users\sony vaio\source\repos\sinemaTekSecim\sinemaTekSecim\obj\Debug\sinemaTekSecim.Properties.Resources.resources
+c:\users\sony vaio\source\repos\sinemaTekSecim\sinemaTekSecim\obj\Debug\sinemaTekSecim.SatinAlma.resources
+c:\users\sony vaio\source\repos\sinemaTekSecim\sinemaTekSecim\obj\Debug\sinemaTekSecim.csproj.GenerateResource.Cache
+c:\users\sony vaio\source\repos\sinemaTekSecim\sinemaTekSecim\obj\Debug\sinemaTekSecim.csproj.CoreCompileInputs.cache
+c:\users\sony vaio\source\repos\sinemaTekSecim\sinemaTekSecim\obj\Debug\sinemaTekSecim.exe
+c:\users\sony vaio\source\repos\sinemaTekSecim\sinemaTekSecim\obj\Debug\sinemaTekSecim.pdb
