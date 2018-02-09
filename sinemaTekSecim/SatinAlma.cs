@@ -13,7 +13,6 @@ namespace sinemaTekSecim
     public partial class SatinAlma : Form
     {
         Form1 AnaForm;
-        string KoltukNo;
         string gözlükSecim;
         string MenuSecim;
         int hasilat = 0;
@@ -27,16 +26,32 @@ namespace sinemaTekSecim
             cmbIndirim.Items.Add("tam");
             cmbIndirim.Items.Add("ogrenci");
             txtKoltukNo.Enabled = false;
+           
         }
 
         private void SatinAlma_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         private void btnSatinAl_Click(object sender, EventArgs e)
         {
-
+            
+            hasilat +=  UcretHesapla(cmbIndirim.Text);
+            KoltukDoluysaRenkDeğiştir(txtKoltukNo.Text);
+         
+            listBox1.Items.Add("KOLTUK NO:"+txtKoltukNo.Text);
+            listBox1.Items.Add("INDIRIMLİ Mİ:" + cmbIndirim.Text);
+            listBox1.Items.Add("GOZLUK SECİM:" + gözlükSecim);
+            listBox1.Items.Add("MENÜ SECİM:" +MenuSecim);
+            listBox1.Items.Add(" UCRET:" + ucret);
+            lblUcret.Text = hasilat.ToString();
+         
+            MessageBox.Show("Ödecenek Ucret:"+ucret);
+            this.Close();
+        }
+        public int UcretHesapla(string secim)
+        {
             if (cmbIndirim.Text == "ogrenci")
             {
                 ucret += 15;
@@ -44,18 +59,20 @@ namespace sinemaTekSecim
                 {
                     MenuSecim = "EvEt";
                     gözlükSecim = "Evet";
-                    ucret += 15;
+                   ucret += 15;
                 }
                 else if (chbMenü.Checked)
                 {
                     MenuSecim = "EvEt";
-                    ucret += 10;
+                  ucret += 10;
                 }
                 else if (chbGözlük.Checked)
                 {
                     gözlükSecim = "Evet";
-                    ucret += 5;
+                   ucret += 5;
+                   
                 }
+                return ucret;
             }
             else if (cmbIndirim.Text == "tam")
             {
@@ -77,18 +94,12 @@ namespace sinemaTekSecim
                     gözlükSecim = "Evet";
                     ucret += 5;
                 }
+                return ucret;
             }
-            hasilat += ucret;
-         
-
-
-            listBox1.Items.Add("KOLTUK NO:"+txtKoltukNo.Text);
-            listBox1.Items.Add("INDIRIMLİ Mİ:" + cmbIndirim.Text);
-            listBox1.Items.Add("GOZLUK SECİM:" + gözlükSecim);
-            listBox1.Items.Add("MENÜ SECİM:" +MenuSecim);
-            listBox1.Items.Add(" UCRET:" + ucret);
-            lblUcret.Text = hasilat.ToString();
-
+            return ucret;
+        }
+        public void KoltukDoluysaRenkDeğiştir(string koltukNo)
+        {
             switch (txtKoltukNo.Text)
             {
                 case "A1":
@@ -154,8 +165,6 @@ namespace sinemaTekSecim
                 default:
                     break;
             }
-
-           
 
         }
 

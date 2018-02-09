@@ -1,0 +1,5 @@
+A2	tam	Evet	EvEt	
+A3	ogrenci	Evet	EvEt	
+A2	ogrenci	Evet	EvEt	
+A4	tam	Evet	EvEt	
+A1	tam	Evet	EvEt	
